@@ -9,7 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    
+}
 
+
+@property (nonatomic,weak) IBOutlet UILabel *sentenceCount;
+@property (nonatomic,weak) IBOutlet UILabel *wordCount;
+@property (nonatomic,weak) IBOutlet UILabel *letterCount;
+@property (nonatomic,weak) IBOutlet UILabel *vowelCount;
+@property (nonatomic,weak) IBOutlet UITextField *userText;
+@property (nonatomic,weak) IBOutlet UIButton *getStats;
 
 @end
 
