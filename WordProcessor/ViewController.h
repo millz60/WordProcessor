@@ -18,8 +18,8 @@
 @property (nonatomic,weak) IBOutlet UILabel *wordCount;
 @property (nonatomic,weak) IBOutlet UILabel *letterCount;
 @property (nonatomic,weak) IBOutlet UILabel *vowelCount;
-@property (nonatomic,weak) IBOutlet UITextField *userText;
 @property (nonatomic,weak) IBOutlet UIButton *getStats;
+@property (nonatomic,weak) IBOutlet UITextView *usersText;
 
 @end
 

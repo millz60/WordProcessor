@@ -26,7 +26,7 @@
 
 - (IBAction) buttonPressed: (UIButton *) sender{
     
-    NSString *textField = self.userText.text;
+    NSString *textField = self.usersText.text;
 
     
     NSArray *wordCount = [textField componentsSeparatedByString:@" "];
@@ -69,7 +69,7 @@
     self.vowelCount.text = [NSString stringWithFormat:@"There are %d vowels.", vowelCount];
     
     
-    [_userText resignFirstResponder];
+    [_usersText resignFirstResponder];
 }
 
 @end
