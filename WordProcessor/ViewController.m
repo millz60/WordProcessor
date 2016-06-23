@@ -30,15 +30,17 @@
 
     
     NSArray *wordCount = [textField componentsSeparatedByString:@" "];
+    NSLog(@"%@",wordCount);
     NSUInteger wordCountLength = [wordCount count];
+    NSLog(@"%lu",wordCountLength);
     
-    NSArray *sentenceCount = [textField componentsSeparatedByString:@". "];
+    NSArray *sentenceCount = [textField componentsSeparatedByString:@"."];
     NSUInteger sentenceCountLength = [sentenceCount count];
     
     NSUInteger letterCountLength = [textField length] - wordCountLength;
     
     NSMutableArray *textFieldArray = [NSMutableArray new];
-    for (NSInteger i=0; i<textField.length; i++) {
+    for (NSInteger i=0; i<textField.length; i++){
         [textFieldArray addObject:[NSString stringWithFormat:@"%C", [textField characterAtIndex:i]]];
     }
     
@@ -47,6 +49,7 @@
         
         if ([letter isEqualToString:@"a"] || [letter isEqualToString:@"A"] ){
             vowelCount++;
+            
         }
         else if ([letter isEqualToString:@"e"] || [letter isEqualToString:@"E"]){
             vowelCount++;
